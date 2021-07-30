@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +37,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.waveUP{
+  /* margin-top: -10rem; */
+  max-height: 50vh;
+}
+
+.waveDown{
+  /* margin-bottom: -10rem; */
+  max-height: 50vh;
 }

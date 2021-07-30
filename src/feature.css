@@ -1,0 +1,34 @@
+.feature{
+    display: flexbox;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://superpage.to/home/rangoli-1.svg) no-repeat right;
+}
+.text{
+    padding: 0 8rem;
+    justify-content: center;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-areas: auto auto auto;
+}
+.text>h1{
+    color: #000000e3;
+    font-size: 3.8rem;
+    font-weight: 600;
+    /* line-height: 5rem; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.text>p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem auto 5rem auto;
+    padding: 0 8rem;
+}
+.features{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+}

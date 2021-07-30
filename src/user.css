@@ -1,0 +1,20 @@
+.user_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+.image{
+    /* mb-3 rounded-circle img-cover */
+    border-radius: 100%;
+    object-fit: cover;
+    flex: .3;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.name{
+    /* font-bold font-lg */
+    font-weight: bold;
+    font-size: large;
+}
