@@ -19,3 +19,19 @@
     grid-template-columns: auto auto auto;
     justify-content: center;
 }
+
+@media (max-width:800px) {
+    .user{
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .users{
+        display: flex;
+        width: 100vmax;
+        margin: 0;
+    }
+   
+}

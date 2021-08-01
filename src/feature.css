@@ -32,3 +32,28 @@
     justify-content: center;
 
 }
+
+@media (max-width:800px)  {
+    .feature{
+        display: flex;
+        width: 100vmax;
+        margin: 0;
+
+    }
+    .text{
+        padding: 0 20px;
+    }
+    .text>p{
+        margin: auto;
+        padding: 0     
+    }
+    .features{
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        justify-content: center;
+        grid-auto-flow: row;
+        
+    
+    }
+}

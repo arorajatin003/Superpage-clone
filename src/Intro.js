@@ -11,7 +11,7 @@ const Intro =(()=>{
                 <a href='#' className="intro__conttentLink">GET STARTED, IT'S FREE</a>
             </div>
             <div className="intro__image">
-                <img src="https://superpage.to/home/one-page-for-all-links.png" width="480" />
+                <img src="https://superpage.to/home/one-page-for-all-links.png" width="480"  />
             </div>
         </div>
     )

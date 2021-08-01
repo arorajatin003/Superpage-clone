@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .App-logo {
@@ -39,12 +40,16 @@
   }
 }
 
-.waveUP{
-  /* margin-top: -10rem; */
-  max-height: 50vh;
-}
 
-.waveDown{
-  /* margin-bottom: -10rem; */
-  max-height: 50vh;
+
+
+
+@media  (max-width: 800px) {
+  .waveUP{
+    width: 100vmax;
+  }
+
+  .waveDown{
+    width: 100vmax;
+  }
 }
