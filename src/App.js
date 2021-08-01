@@ -5,10 +5,10 @@ import WaveUP from './WaveUp';
 import WaveDown from './WaveDown';
 import Component from './Component';
 import Fearures from './Features';
-import Uses from './Uses';
-import './App.css';
 import Users from './Users';
 import GetPage from './GetPage'
+import Footer from './Footer';
+import './App.css';
 
 function App() {
   const uses=["One page for all your links & content",
@@ -37,6 +37,7 @@ function App() {
       <Users></Users>
       <WaveDown color="#ddd"></WaveDown> 
       <GetPage></GetPage>
+      <Footer></Footer>
     </div>
   );
 }

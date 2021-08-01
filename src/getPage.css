@@ -1,6 +1,62 @@
 .getPage{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.getPage__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 29% 0 29%;
+}
+.getPage__title{
+    color: #000000e3;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 5rem;
+    margin-top: 0;
+}
+.getPage__text{
+        /* margin-top: .5rem; */
+        display: flex;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        color: rgba(0, 0, 0, 0.548);
+}
+.getPage__link{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: #000000d3;
+    color: white;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.getPage__link:hover{
+    background-color: black;
+}
+
+@media (max-width:800px) {
+    .getPage__content{
+        padding: 0 20px;
+    }
+    .getPage__link{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        background-color: #000000d3;
+        color: white;
+        padding: 1rem 3rem;
+        font-weight: 500;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+    .getPage{
+        width: 100vmax;
+    }
+    .getPage__text{
+        flex-direction: column;
+    }
 }

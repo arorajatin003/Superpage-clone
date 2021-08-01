@@ -32,7 +32,7 @@
 
 }
 .header__ul>li{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .header__ul>li>a{
     text-decoration: none;
@@ -57,5 +57,5 @@
 }
 .header__ul__signup:hover{
     color: beige ;
-    background-color: #9b7fff;;
+    background-color: #9b7fff;
 }

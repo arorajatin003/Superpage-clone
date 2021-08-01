@@ -18,3 +18,11 @@
     font-weight: bold;
     font-size: large;
 }
+
+@media (max-width:800px) {
+    .name{
+        /* font-bold font-lg */
+        font-weight: bold;
+        font-size:larger;
+    }
+}

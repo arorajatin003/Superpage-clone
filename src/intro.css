@@ -21,7 +21,7 @@
 }
 .intro__content>h1{
     color: #000000e3;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     line-height: 5rem;
@@ -57,9 +57,32 @@
     margin-top: -50px;
 }
 
-
+@media (max-width: 1024px) {
+    .intro__conttentLink{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        padding: 1rem 2.5rem;
+    }
+}
 @media (max-width: 800px) {
     .intro {
-      flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+	    align-items: center;
+        text-align: center;
+        width: 100vmax;
+    }
+    .intro__content{
+        flex: 1;
+        justify-content: space-around;
+        text-align: center;
+        padding: 20px;
+        /* background-color: turquoise; */
+    }
+    .intro__image{
+        flex: 1;
+        justify-content: space-around;
+        margin-top: 50px;
+        /* background-color: tomato; */
     }
   }
