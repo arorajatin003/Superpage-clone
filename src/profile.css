@@ -1,0 +1,54 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto 70px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_username{
+    margin: 0;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.profile_usernameStarting{
+    color: rgba(0, 0, 0, 0.548);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.profile_usernameEnding{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.profile_followers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile_image{
+    border-radius: 30px;
+    max-height: 480px;
+    overflow-y: scroll;
+    width: 300px;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+ 
