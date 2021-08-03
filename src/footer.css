@@ -39,19 +39,25 @@
     padding: 0;
     justify-content: space-between;
     align-items: center;   
-    color: black;
+    
 }
-
+.footer__icon{
+    color: black !important;
+}
 
 @media (max-width:800px) {
     .footer{
         width: 100vmax;
+        flex-direction: column;
     }
     .footer__icon{
-        padding: 5px;
+        padding: 0 5px;
+        color: black !important;
+        margin-top: 0;
     }
     .footer__ul>li{
-        font-size: 1.1rem;
+        font-size: 1.4rem;
+        margin: 5px 5px 0 5px;
     }
 
 }

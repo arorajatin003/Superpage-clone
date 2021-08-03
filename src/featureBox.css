@@ -23,20 +23,20 @@
     margin: 2rem auto .5rem 0;
 }
 .content>h4{
-    font-size: 1.4rem;
-    line-height: .5rem;
+    font-size: 1.3rem;
+    line-height: .9rem;
     font-weight: 500;
     margin: 0;
 }
 .content>p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1rem 0 0 0 ;
 }
 
 @media (max-width:800px) {
     .featureBox{
         flex-direction: row;
-        width: 50vmax;
+        width: 80vmax;
         padding: 0 10px;
         justify-content: space-around;
         align-content: center;

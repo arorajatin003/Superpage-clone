@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react"
 import Typewriter from "typewriter-effect";
+import Typist from "react-typist";
 import "./getPage.css"
 
 const WaveDown = ((props)=>{
-    const [run, setRun]=useState(true);
+    const [run, setRun]=useState(1);
     useEffect(()=>{
-        setTimeout(()=>{setRun(true)},1000)
+        setRun(1);
+        // if(run){
+        //     setTimeout(()=>{setRun(false)},5000)
+        //     console.log(run);
+        // }else{
+        //     setTimeout(()=>{setRun(true)},5000)
+        //     console.log(run);
+        // }
     },[run])
     return(
         <div className="getPage">
@@ -16,32 +24,17 @@ const WaveDown = ((props)=>{
                 <div className="getPage__text">
                 superpage.to/
                 {run ? 
-                    <Typewriter
-                    loop='true'
-                    onInit={(typewriter)=> {typewriter
-                            .typeString("guruji")
-                            .pauseFor(1000)
-                            .deleteAll()
-                            .typeString("pewdie")
-                            .pauseFor(1000)
-                            .deleteAll()
-                            .typeString("musk")
-                            .start();
-                        }}
-                    />
+                    (
+                    <Typist avgTypingDelay={50} onTypingDone={() => setRun(0)}>
+                        <span>guruji</span>
+                        <Typist.Backspace count={20} delay={800} />
+                        <span>pewdie</span>
+                        <Typist.Backspace count={20} delay={800} />
+                        <span>musk</span>
+                        <Typist.Backspace count={20} delay={800} />
+                    </Typist>)
                     :
-                    <Typewriter
-                onInit={(typewriter)=> {typewriter
-                        .typeString("guruji")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("pewdie")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("musk")
-                        .start();
-                    }}
-                /> }
+                    "" }
                 
                 </div>
                 <div>
