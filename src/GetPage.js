@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react"
-import Typewriter from "typewriter-effect";
+import Typist from "react-typist";
 import "./getPage.css"
 
 const WaveDown = ((props)=>{
-    const [run, setRun]=useState(true);
-    useEffect(()=>{
-        setTimeout(()=>{setRun(true)},1000)
-    },[run])
+    const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    setCount(1);
+  }, [count]);
     return(
         <div className="getPage">
             <div className="getPage__content">
@@ -15,34 +16,18 @@ const WaveDown = ((props)=>{
                 </div>
                 <div className="getPage__text">
                 superpage.to/
-                {run ? 
-                    <Typewriter
-                    loop='true'
-                    onInit={(typewriter)=> {typewriter
-                            .typeString("guruji")
-                            .pauseFor(1000)
-                            .deleteAll()
-                            .typeString("pewdie")
-                            .pauseFor(1000)
-                            .deleteAll()
-                            .typeString("musk")
-                            .start();
-                        }}
-                    />
-                    :
-                    <Typewriter
-                onInit={(typewriter)=> {typewriter
-                        .typeString("guruji")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("pewdie")
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString("musk")
-                        .start();
-                    }}
-                /> }
-                
+                {count ? (
+                    <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
+                    <span>guruji</span>
+                    <Typist.Backspace count={20} delay={800} />
+                    <span>musk</span>
+                    <Typist.Backspace count={20} delay={800} />
+                    <span>pewdie</span>
+                    <Typist.Backspace count={20} delay={800} />
+                    </Typist>
+                ) : (
+                ""
+                )}
                 </div>
                 <div>
                     <a href="#" className="getPage__link">GET STARTED, ITS FREE</a>
